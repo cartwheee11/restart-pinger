@@ -53,13 +53,13 @@ export default async function (req, res) {
           })
         )
           .then((response) => {
-            req.json("Ok");
+            res.json("Ok");
           })
           .catch((err) => {
-            req.json("Error");
+            res.json("Error");
           });
       } catch (err) {
-        req.json("Error");
+        res.json("Error");
       }
     });
 }

@@ -56,10 +56,10 @@ export default async function (req, res) {
             res.json("Ok");
           })
           .catch((err) => {
-            res.json("Error");
+            res.json(err);
           });
       } catch (err) {
-        res.json("Error");
+        res.json(err);
       }
     });
 }
